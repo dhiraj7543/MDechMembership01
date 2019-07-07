@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reload-->
+        <scene sceneID="Xg1-Wd-Ilb">
+            <objects>
+                <viewController storyboardIdentifier="RestoreViewController" id="rYs-oy-lzk" customClass="RestoreViewController" customModule="MDeckMembership001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ucq-dV-6nL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-U7-Fi5">
+                                <rect key="frame" x="0.0" y="50" width="375" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnw-4q-1Ci">
+                                        <rect key="frame" x="75" y="230" width="225" height="56.5"/>
+                                        <color key="backgroundColor" red="0.54931169748306274" green="0.78177005052566528" blue="0.22276809811592102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nnw-4q-1Ci" secondAttribute="height" multiplier="4:1" id="zns-gx-gkI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="RESTORE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWF-oi-w6P">
+                                        <rect key="frame" x="16" y="42" width="343" height="145.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOM-Ty-NIx">
+                                                <rect key="frame" x="16" y="32" width="311" height="81.5"/>
+                                                <string key="text">Press the "RESTORE" button if you have  already bought access to membership area on another device or if the origin device was wiped.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YOM-Ty-NIx" firstAttribute="leading" secondItem="uWF-oi-w6P" secondAttribute="leading" constant="16" id="CbV-cj-HqA"/>
+                                            <constraint firstAttribute="trailing" secondItem="YOM-Ty-NIx" secondAttribute="trailing" constant="16" id="cjf-bc-h7O"/>
+                                            <constraint firstItem="YOM-Ty-NIx" firstAttribute="top" secondItem="uWF-oi-w6P" secondAttribute="top" constant="32" id="fdj-qF-qqd"/>
+                                            <constraint firstAttribute="bottom" secondItem="YOM-Ty-NIx" secondAttribute="bottom" constant="32" id="rxr-le-n4D"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21617531776428223" green="0.76481157541275024" blue="0.9064096212387085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nnw-4q-1Ci" firstAttribute="centerX" secondItem="uWF-oi-w6P" secondAttribute="centerX" id="0j6-v7-8EB"/>
+                                    <constraint firstItem="nnw-4q-1Ci" firstAttribute="top" secondItem="uWF-oi-w6P" secondAttribute="bottom" constant="42.5" id="M68-8H-nxH"/>
+                                    <constraint firstItem="nnw-4q-1Ci" firstAttribute="width" secondItem="8Ff-U7-Fi5" secondAttribute="width" multiplier="0.6" id="VOJ-Mk-zq7"/>
+                                    <constraint firstAttribute="trailing" secondItem="uWF-oi-w6P" secondAttribute="trailing" constant="16" id="eqK-bm-JG7"/>
+                                    <constraint firstItem="uWF-oi-w6P" firstAttribute="leading" secondItem="8Ff-U7-Fi5" secondAttribute="leading" constant="16" id="jaQ-Q5-NTR"/>
+                                    <constraint firstItem="uWF-oi-w6P" firstAttribute="top" secondItem="8Ff-U7-Fi5" secondAttribute="top" constant="42" id="s0p-ZV-XRI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Ff-U7-Fi5" firstAttribute="bottom" secondItem="nvK-mh-R3M" secondAttribute="bottom" id="ILa-SC-dhK"/>
+                            <constraint firstItem="8Ff-U7-Fi5" firstAttribute="top" secondItem="nvK-mh-R3M" secondAttribute="top" constant="30" id="Yhy-s0-HAG"/>
+                            <constraint firstItem="8Ff-U7-Fi5" firstAttribute="trailing" secondItem="nvK-mh-R3M" secondAttribute="trailing" id="rFv-da-ZkW"/>
+                            <constraint firstItem="8Ff-U7-Fi5" firstAttribute="leading" secondItem="nvK-mh-R3M" secondAttribute="leading" id="ver-At-hcK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nvK-mh-R3M"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reload" image="reload" id="M53-71-PbM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scs-3M-ltF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="reload" width="19.200000762939453" height="19.200000762939453"/>
+    </resources>
+</document>
